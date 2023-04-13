@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27991759.1a5eea1",
+    "@unocss/nuxt": "^0.49.7",
+    "@unocss/transformer-directives": "^0.49.7",
+    "nuxt": "^3.2.2"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "nuxt-icons": "^3.1.0"
+  }
+}
