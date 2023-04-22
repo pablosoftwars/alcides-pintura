@@ -15,6 +15,11 @@
 			{
 				"title": "Pintado exterior de una casa",
 				"description": "¿Busca darle una nueva vida a la fachada de su hogar? Contamos con un equipo de expertos en pintura de exteriores que pueden transformar su hogar en un abrir y cerrar de ojos. Desde la preparación de la superficie hasta la elección de los mejores productos de pintura, nos aseguramos de que cada detalle sea cuidado para ofrecerle una pintura de alta calidad que resista el paso del tiempo.",
+				"images": [
+					"/img/service/casa1-exterior-1920w.webp",
+					"/img/service/casa2-exterior.webp",
+					"/img/service/casa2-exterior.webp"
+				],
 				"especifications": {
 					"subTitle": "Especificaciones",
 					"paragraphs": [
@@ -43,6 +48,11 @@
 			{
 				"title": "Pintado interior de una casa",
 				"description": "¿Necesita darle una nueva apariencia a su hogar por dentro? Contamos con un equipo de expertos en pintura de interiores que pueden ayudarle a transformar cualquier habitación en su hogar. Desde el cambio de color hasta la reparación de las imperfecciones en las paredes, nos aseguramos de que cada detalle sea atendido para brindarle una experiencia de pintura sin problemas.",
+				"images": [
+					"/img/service/casa1-interior-1920w.webp",
+					"/img/service/casa2-interior-1920w.webp",
+					"/img/service/casa3-interior-1920w.webp"
+				],
 				"especifications": {
 					"subTitle": "Especificaciones",
 					"paragraphs": [
@@ -71,6 +81,11 @@
 			{
 				"title": "Pintado de barandas",
 				"description": "Las barandas son una parte importante de su hogar que no deben ser descuidadas. Ofrecemos servicios de pintura para barandas para que luzcan como nuevas y resistan el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
+				"images": [
+					"/img/service/casa-barandal-1.webp",
+					"/img/service/casa-barandal-2.webp",
+					"/img/service/casa-barandal-2.webp"
+				],
 				"especifications": {
 					"subTitle": "Especificaciones",
 					"paragraphs": [
@@ -99,6 +114,11 @@
 			{
 				"title": "Pintado de rejas",
 				"description": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor. Ofrecemos servicios de pintura para rejas para que se vean impecables y puedan resistir el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
+				"images": [
+					"/img/service/casa-reja1-1920w.webp",
+					"/img/service/casa-reja1-1920w.webp",
+					"/img/service/casa-reja1-1920w.webp"
+				],
 				"especifications": {
 					"subTitle": "Especificaciones",
 					"paragraphs": [

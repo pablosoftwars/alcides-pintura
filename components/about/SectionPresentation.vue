@@ -6,11 +6,11 @@
 			<!-- top and right -->
 			<div class="panel-top-right">
 
-				<div class="absolute -z-1 left-0 top-0">
-					<h2 class="relative p-14 m-0 text-6xl text-white">
-						Alcide & Asociados
-						<nuxt-img class="absolute -z-1 w-full h-full top-0 left-0" src="/img/about/rastro-pintura-rodillo-rojo.png">
-						</nuxt-img>
+				<div class="container-title-company">
+					<h2 class="title-company">
+						Alcides & Asociados
+						<div class="title-company-overlay"></div>
+						<nuxt-img class="bg-title-company bg-title -z-1" src="/img/about/rastro-pintura-rodillo-rojo.png"></nuxt-img>
 					</h2>
 				</div>
 
@@ -24,12 +24,13 @@
 
 			<!-- bottom and left -->
 			<div class="panel-bottom-left">
-				<h2 class="text-4xl">{{ dataSection.title }}</h2>
-				<h3 class="text-2xl">{{ dataSection.subTitle }}</h3>
+				<h2 class="title-presentation">{{ dataSection.title }}</h2>
+				<h3 class="subtitle-presentation">{{ dataSection.subTitle }}</h3>
+				<hr class="divisor-presentation">
 				<p
 					v-for="(paragraph, i) in dataSection.content"
 					:key="i"
-					class="text-lg"
+					class="paragraph-presentation"
 				>
 					{{ paragraph }}
 				</p>
@@ -63,11 +64,29 @@ let props = defineProps({
 })
 
 let sectionPresentation = ref(null)
-let animateSection = gsap.timeline()
+let animateSection = gsap.timeline( {duration: .3} )
 
 let play = (htmlElements) => {
-	animateSection.to(htmlElements.bgTitle,
-	{ width: '100%', duration: 0.5 })
+	animateSection.to(htmlElements.titleCompany, {
+		width: 0, duration: .5
+	})
+	animateSection.to(htmlElements.titlePresentation, {
+		x:0,
+		opacity: 1,
+		filter: 'blur(0rem)'
+	})
+	animateSection.to(htmlElements.subTitlePresentation, {
+		x: 0,
+		opacity: 1,
+		filter: 'blur(0rem)'
+	})
+	animateSection.to(htmlElements.divisorPresentation, { width: '100%' })
+	animateSection.to(htmlElements.paragraphPresentation, {
+		y: 0,
+		opacity: 1,
+		filter: 'blur(0rem)'
+	})
+
 }
 
 let stop = () => {
@@ -76,12 +95,18 @@ let stop = () => {
 
 onMounted(() => {
 	let htmlElements = {
-		bgTitle: sectionPresentation.value.querySelector('.bg-title-presentation')
+		titleCompany: sectionPresentation.value.querySelector('.title-company-overlay'),
+		titlePresentation: sectionPresentation.value.querySelector('.title-presentation'),
+		subTitlePresentation: sectionPresentation.value.querySelector('.subtitle-presentation'),
+		paragraphPresentation:  sectionPresentation.value.querySelectorAll('.paragraph-presentation'),
+		divisorPresentation: sectionPresentation.value.querySelector('.divisor-presentation')
 	}
 
-	// console.log(htmlElements.title)
 
-	animateSection.set(htmlElements.bgTitle,{ width: 0 })
+	animateSection.set(htmlElements.titlePresentation, { x: 200, opacity: 0, filter: 'blur(1rem)' })
+	animateSection.set(htmlElements.subTitlePresentation, { x: -200, opacity: 0, filter: 'blur(1rem)'})
+	animateSection.set(htmlElements.paragraphPresentation, { y: 200, opacity: 0, filter: 'blur(1rem)'})
+	animateSection.set(htmlElements.divisorPresentation, { width: 0 })
 
 	watchEffect(() => {
 		props.dataAnimation.play ? play(htmlElements):stop()
@@ -93,8 +118,9 @@ onMounted(() => {
 <style scoped>
 .container-section-presentation {
 	--at-apply: flex flex-col justify-center items-center;
-	--at-apply: w-full;
-	min-height: calc(100vh - 60px);
+	--at-apply: w-full overflow-hidden;
+	--at-apply: py-20 sm:py-30;
+	/* min-height: calc(100vh - 60px); */
 }
 
 .card-presentation {
@@ -110,20 +136,38 @@ onMounted(() => {
 	object-position: top;
 }
 
-.card-presentation .panel-top-right {
+.panel-top-right {
 	--at-apply: relative;
-	--at-apply: flex justify-center items-center;
+	--at-apply: flex flex-grow justify-center items-center;
 	--at-apply: h-full w-full;
 	--at-apply: p-2;
 }
 
-.card-presentation .panel-bottom-left {
+.panel-bottom-left {
 	--at-apply: mx-auto container h-full w-full text-slate-900;
 	--at-apply: p-2;
 }
 
+.container-title-company {
+	--at-apply: absolute -z-1 left-0 top-0;
+}
+
+.title-company {
+	--at-apply: relative p-14 m-0 text-6xl text-white;
+}
+
+.title-company-overlay {
+	--at-apply: absolute top-0 right-0;
+	--at-apply: bg-white;
+	--at-apply: h-full w-full;
+}
+
 .container-title-presentation {
 	--at-apply: absolute top-0 left-0 w-full h-full;
+}
+
+.subtitle-presentation {
+	--at-apply: text-2xl text-slate-900;
 }
 .bg-title-presentation {
 	--at-apply: absolute top-0 left-0 w-full h-full;
@@ -131,7 +175,13 @@ onMounted(() => {
 }
 .title-presentation {
 	--at-apply: relative;
-	--at-apply: text-6xl text-white text-center;
+	--at-apply: text-6xl text-red-500 text-center;
 	--at-apply: w-70% py-8 px-2 font-bold mt-10;
+}
+.paragraph-presentation {
+	--at-apply: text-lg text-slate-900;
+}
+.bg-title {
+	--at-apply: absolute -z-1 w-full h-full top-0 left-0;
 }
 </style>

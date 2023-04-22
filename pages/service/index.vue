@@ -17,7 +17,9 @@ import SectionServices from '~/components/services/SectionService.vue'
 
 let dataPresentation = dataServices.sectionPresentation
 let dataService = dataServices.sectionServices
-console.log(dataService)
+
+onMounted(() => {
+})
 </script>
 
 <style scoped>

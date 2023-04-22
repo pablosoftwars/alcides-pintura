@@ -12,13 +12,13 @@
 				>
 
 					<!-- background cards -->
-					<div class="background-card">
-						<div class="bg-red-500 flex-1"></div>
-						<div class="bg-slate-900 flex-1"></div>
-					</div>
+					<!-- <div class="background-card"> -->
+					<!-- 	<div class="bg-red-500 flex-1"></div> -->
+					<!-- 	<div class="bg-slate-900 flex-1"></div> -->
+					<!-- </div> -->
 
 					<!-- background overlay -->
-					<div class="background-overlay-card"></div>
+					<!-- <div class="background-overlay-card"></div> -->
 
 					<p class="m-0 text-8xl text-bold">0{{i + 1}}</p>
 					<p class="text-lg">{{ paragraph }}</p>
@@ -75,7 +75,7 @@ onMounted(() => {
 
 <style scoped>
 .container-section-hiring-steps {
-	--at-apply: text-center py-20 py-30;
+	--at-apply: text-center py-20 sm:py-30;
 }
 
 .container-wrap {
@@ -90,9 +90,12 @@ onMounted(() => {
 .container-cards {
 	--at-apply: flex flex-col sm:flex-row flex-wrap w-full gap-8;
 }
+.container-card {
+	--at-apply: flex flex-col sm:flex-row;
+}
 
 .card {
-	--at-apply: relative text-white p-2 flex-1;
+	--at-apply: relative bg-slate-100 p-2 flex-1;
 }
 
 .background-card {
