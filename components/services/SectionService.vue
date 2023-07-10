@@ -63,7 +63,6 @@
 </template>
 
 <script setup>
-import SlideShow from '~/components/shared/SlideShow.vue'
 import SlideImg from '~/components/shared/SlideImg.vue'
 
 let props = defineProps({
