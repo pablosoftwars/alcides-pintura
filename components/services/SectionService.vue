@@ -1,12 +1,14 @@
 <template>
-	<section class="container-section-service">
+	<section :id="dataSection.id" class="container-section-service">
 		<div class="card-service">
 			
 			<h2 class="text-slate-900">{{ dataSection.title }}</h2>
 			<p class="text-lg">{{ dataSection.description }}</p>
+
 			<div class="flex flex-col gap-4">
-				<!-- imagenslides -->
-				<SlideShow />
+				<div class="sm:px-6rem md:px-8rem">
+					<SlideImg :dataImg='dataSection.img'/>
+				</div>
 				<!-- texto -->
 				<div class="flex flex-col">
 					<h2 class="text-slate-900">¿Comó lo trabajamos?</h2>
@@ -62,14 +64,26 @@
 
 <script setup>
 import SlideShow from '~/components/shared/SlideShow.vue'
+import SlideImg from '~/components/shared/SlideImg.vue'
 
 let props = defineProps({
 	dataSection: {
 		type: Object,
 		default: {
+			href: '',
 			title: 'title',
 			description: 'description',
-			images: ["/img/service/casa3-interior-1920w.webp"],
+			img: [
+				{
+					id: 2,
+					urlImg2560: '/img/service/fachada2-2560w.webp',
+					urlImg1920: '/img/service/fachada2-1920w.webp',
+					urlImg1280: '/img/service/fachada2-1280w.webp', 
+					urlImg400: '/img/service/fachada2-400w.webp', 
+					alt: 'alt imagen 2',
+					caption: 'imagen numero 2'
+				},
+			],
 			especifications: { 
 				subTitle: 'subtitles',
 				paragraphs: [ 'paragraphs' ]
@@ -96,7 +110,7 @@ let props = defineProps({
 
 <style scoped>
 .container-section-service {
-	--at-apply: my-20 sm:my-30;
+	--at-apply: py-20 sm:py-30;
 }
 
 .card-service {

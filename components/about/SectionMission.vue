@@ -120,7 +120,7 @@ onMounted(() => {
 	--at-apply: flex justify-center items-center;
 }
 .container-wrap {
-	--at-apply: flex flex-col p-2 sm:flex-row gap-4 mx-auto container;
+	--at-apply: flex flex-col p-2 lg:flex-row gap-4 mx-auto container;
 	--at-apply: text-white;
 }
 

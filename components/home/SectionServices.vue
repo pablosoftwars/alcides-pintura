@@ -15,9 +15,12 @@
 
 						<h3 class="">{{ content.subTitle }}</h3>
 
-						<p class="text-slate-900">{{ content.paragraph }}</p>
+						<p class="text-slate-900 text-lg">{{ content.paragraph }}</p>
 						<div class="h-full flex items-end justify-center">
-							<button class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold">ver mas</button>
+							<!-- <button class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold">ver mas</button> -->
+							<a class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold" :href="content.href">
+								Ver mas
+							</a>
 						</div>
 					</div>
 				</div>
@@ -34,7 +37,12 @@ let props = defineProps({
 		default: {
 			title: "title",
 			content: [
-				{ icon: 'bar-solid', subTitle: "subtitle", paragraph: "paragraph" }
+				{ 
+					icon: 'bar-solid',
+					subTitle: "subtitle",
+					paragraph: "paragraph",
+					href: "#serviceExterior"
+				}
 			]
 		}
 	},
@@ -87,10 +95,10 @@ onMounted(() => {
 	--at-apply: py-20 sm:py-30 overflow-hidden;
 }
 .container-wrap {
-	--at-apply: flex flex-col gap-10 text-center container mx-auto;
+	--at-apply: flex flex-col gap-10 text-center container mx-auto px-2;
 }
 .container-cards {
-	--at-apply: flex flex-col sm:flex-row gap-8 justify-between;
+	--at-apply: flex flex-col md:flex-row gap-8 justify-between;
 }
 .card {
 	--at-apply: flex-1 flex flex-col p-4;

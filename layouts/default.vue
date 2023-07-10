@@ -6,9 +6,9 @@
 		<div class="layout-body">
 			<NuxtPage :transition="{ name: 'fade', mode: 'out-in' }" />
 		</div>
-		<div class="contact-container">
-			<ContactFloat />
-		</div>
+		<!-- <div class="contact-container"> -->
+		<!-- 	<ContactFloat /> -->
+		<!-- </div> -->
 	</div>
 </template>
 

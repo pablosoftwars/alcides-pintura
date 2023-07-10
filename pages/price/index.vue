@@ -1,7 +1,7 @@
 <template>
-	<div ref="containerPrice" class="flex flex-col justify-center items-center container mx-auto">
+	<div ref="containerPrice" class="container-price">
 		 <h1>Calculadora de Pintura</h1>
-			<form class="border border-solid p-4 w-full text-lg">
+			<form class="bg-gray-100 p-8 text-lg">
 				<label for="longitud">Longitud:</label>
 				<input type="number" id="longitud" name="longitud"><br>
 
@@ -15,6 +15,9 @@
 					<option value="baranda">Baranda</option>
 					<option value="reja-metalica">Reja metálica</option>
 				</select><br>
+
+				<label for="numero-capas">Numero de Capas:</label>
+				<input type="number" id="numero-capa" name="capas"><br>
 
 				<button type="button" @click="calcular()">Calcular</button>
 				<button type="button" @click="calcular()">Reiniciar</button>
@@ -59,3 +62,10 @@ onMounted(() => {
       }
 })
 </script>
+<style scoped>
+.container-price {
+	--at-apply: flex flex-col justify-center items-center container mx-auto;
+	--at-apply: w-full;
+	--at-apply: py-20 sm:py-30;
+}
+</style>

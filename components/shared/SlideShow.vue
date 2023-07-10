@@ -1,23 +1,23 @@
 <template>
-	<div ref="slideShow">
-		<div class="slideshow-container max-h-600px overflow-hidden">
+	<div ref="slideShow" class="bg-slate-900">
+		<div class="slideshow-container max-h-600px overflow-hidden item-img">
 
 		<!-- Full-width images with number and caption text -->
 			<div class="mySlides fade">
 				<div class="numbertext">1 / 3</div>
-				<nuxt-img src="/img/service/casa1-interior-1920w.webp" style="width:100%" />
+				<nuxt-img src="/img/service/casa1-interior-1920w.webp" class="item-img" style="width:100%" />
 				<div class="text">Caption Text</div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">2 / 3</div>
-				<nuxt-img src="/img/service/casa1-exterior-1920w.webp" style="width:100%" />
+				<nuxt-img src="/img/service/casa1-exterior-1920w.webp" class="item-img" style="width:100%" />
 				<div class="text">Caption Two</div>
 			</div>
 
 			<div class="mySlides fade">
 				<div class="numbertext">3 / 3</div>
-				<nuxt-img src="/img/service/casa-barandal-1.webp" style="width:100%" />
+				<nuxt-img src="/img/service/casa-barandal-1.webp" class="item-img" style="width:100%" />
 				<div class="text">Caption Three</div>
 			</div>
 
@@ -164,6 +164,11 @@ onMounted(() => {
 @keyframes fade {
   from {opacity: .4; filter: blur(10px)}
   to {opacity: 1; filter: blur(0px)}
+}
+
+.item-img {
+	background-color: red;
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.9);
 }
 
 </style>

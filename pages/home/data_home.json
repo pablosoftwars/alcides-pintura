@@ -17,8 +17,8 @@
 		],
 		"targetAudience": "Personas o empresas que busquen una mejora en la apariencia y protección de su hogar o negocio.",
 		"btnActions": [
-			{ "text": "Mas Informacion", "href": "#" },
-			{ "text": "Contactanos", "href": "#" }
+			{ "text": "Mas Informacion", "href": "/service" },
+			{ "text": "Contactanos", "href": "#Contacts" }
 		]
 	},
 	"sectionHiringSteps": {
@@ -36,22 +36,26 @@
 			{
 				"icon": "paint-roller-solid",
 				"subTitle": "Pintado de exteriores",
-				"paragraph": "¿Busca darle una nueva vida a la fachada de su hogar? "
+				"paragraph": "¿Busca darle una nueva vida a la fachada de su hogar? ",
+				"href": "/service/#serviceExterior"
 			},
 			{
 				"icon": "brush-solid",
 				"subTitle": "Pintado de interiores",
-				"paragraph": "¿Necesita darle una nueva apariencia a su hogar por dentro?"
+				"paragraph": "¿Necesita darle una nueva apariencia a su hogar por dentro?",
+				"href": "/service/#serviceInterior"
 			},
 			{
 				"icon": "stairs-solid",
 				"subTitle": "Pintado de barandas",
-				"paragraph": "Las barandas son una parte importante de su hogar que no deben ser descuidadas."
+				"paragraph": "Las barandas son una parte importante de su hogar que no deben ser descuidadas.",
+				"href": "/service/#serviceRailing"
 			},
 			{
 				"icon": "reja-solid",
 				"subTitle": "Pintado de rejas",
-				"paragraph": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor."
+				"paragraph": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor.",
+				"href": "/service/#serviceFence"
 			}
 		]
 	},

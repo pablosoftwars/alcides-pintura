@@ -8,17 +8,42 @@
 		"img": {
 			"urlSm": "/img/about/pintor-rodillo-640w.webp",
 			"urlXl": "/img/about/pintor-rodillo-1131w.webp",
-			"attrAlt": "image de pintor rodillo rojo"
+			"attrAlt": "image de pintor, rodillo rojo"
 		}
 	},
 	"sectionServices": [
 			{
+				"id": "serviceExterior",
 				"title": "Pintado exterior de una casa",
 				"description": "¿Busca darle una nueva vida a la fachada de su hogar? Contamos con un equipo de expertos en pintura de exteriores que pueden transformar su hogar en un abrir y cerrar de ojos. Desde la preparación de la superficie hasta la elección de los mejores productos de pintura, nos aseguramos de que cada detalle sea cuidado para ofrecerle una pintura de alta calidad que resista el paso del tiempo.",
-				"images": [
-					"/img/service/casa1-exterior-1920w.webp",
-					"/img/service/casa2-exterior.webp",
-					"/img/service/casa2-exterior.webp"
+				"img": [
+					{
+						"id": 1,
+						"urlImg2560": "/img/service/fachada1-2560w.webp",
+						"urlImg1920": "/img/service/fachada1-1920w.webp",
+						"urlImg1280": "/img/service/fachada1-1280w.webp",
+						"urlImg400": "/img/service/fachada1-400w.webp",
+						"alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con colores solidos gris y blanco",
+						"caption": "Fachada colores gris y blanco"
+					},
+					{
+						"id": 2,
+						"urlImg2560": "/img/service/fachada2-2560w.webp",
+						"urlImg1920": "/img/service/fachada2-1920w.webp",
+						"urlImg1280": "/img/service/fachada2-1280w.webp",
+						"urlImg400": "/img/service/fachada2-400w.webp",
+						"alt": "Fachada de una casa estilo chalet dos pisos,pintado de exterior con colores solidos gris priedra y blanco, patio con pasto verde",
+						"caption": "Fachada colores gris piedra y blanco"
+					},
+					{
+						"id": 3,
+						"urlImg2560": "/img/service/fachada3-2560w.webp",
+						"urlImg1920": "/img/service/fachada3-1920w.webp",
+						"urlImg1280": "/img/service/fachada3-1280w.webp",
+						"urlImg400": "/img/service/fachada3-400w.webp",
+						"alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con colores solidos azul con blanco",
+						"caption": "Fachada color indigo y blanco"
+					}
 				],
 				"especifications": {
 					"subTitle": "Especificaciones",
@@ -46,12 +71,37 @@
 				}
 			},
 			{
+				"id": "serviceInterior",
 				"title": "Pintado interior de una casa",
 				"description": "¿Necesita darle una nueva apariencia a su hogar por dentro? Contamos con un equipo de expertos en pintura de interiores que pueden ayudarle a transformar cualquier habitación en su hogar. Desde el cambio de color hasta la reparación de las imperfecciones en las paredes, nos aseguramos de que cada detalle sea atendido para brindarle una experiencia de pintura sin problemas.",
-				"images": [
-					"/img/service/casa1-interior-1920w.webp",
-					"/img/service/casa2-interior-1920w.webp",
-					"/img/service/casa3-interior-1920w.webp"
+				"img": [
+					{
+						"id": 1,
+						"urlImg2560": "/img/service/interior1-2560w.webp",
+						"urlImg1920": "/img/service/interior1-1920w.webp",
+						"urlImg1280": "/img/service/interior1-1280w.webp",
+						"urlImg400": "/img/service/interior1-400w.webp",
+						"alt": "interior de una habitación, paredes color solido blancas, piso de azulejos cuadrados color crema",
+						"caption": "Habitación color blanco"
+					},
+					{
+						"id": 2,
+						"urlImg2560": "/img/service/interior2-2560w.webp",
+						"urlImg1920": "/img/service/interior2-1920w.webp",
+						"urlImg1280": "/img/service/interior2-1280w.webp",
+						"urlImg400": "/img/service/interior2-400w.webp",
+						"alt": "interior de una sala, paredes color solido gris piedra, color solido arena y color solid blanco, azulejos color piedra oscuro",
+						"caption": "Sala colo gris con color arena"
+					},
+					{
+						"id": 3,
+						"urlImg2560": "/img/service/interior3-2560w.webp",
+						"urlImg1920": "/img/service/interior3-1920w.webp",
+						"urlImg1280": "/img/service/interior3-1280w.webp",
+						"urlImg400": "/img/service/interior3-400w.webp",
+						"alt": "interior de una habitación, pared de color azul cielo, piso de azulejos rectangulares color blanco",
+						"caption": "Habitación color azul cielo"
+					}
 				],
 				"especifications": {
 					"subTitle": "Especificaciones",
@@ -79,12 +129,37 @@
 				}
 			},
 			{
+				"id": "serviceRailing",
 				"title": "Pintado de barandas",
 				"description": "Las barandas son una parte importante de su hogar que no deben ser descuidadas. Ofrecemos servicios de pintura para barandas para que luzcan como nuevas y resistan el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
-				"images": [
-					"/img/service/casa-barandal-1.webp",
-					"/img/service/casa-barandal-2.webp",
-					"/img/service/casa-barandal-2.webp"
+				"img": [
+					{
+						"id": 1,
+						"urlImg2560": "/img/service/baranda1-2560w.webp",
+						"urlImg1920": "/img/service/baranda1-1920w.webp",
+						"urlImg1280": "/img/service/baranda1-1280w.webp",
+						"urlImg400": "/img/service/baranda1-400w.webp",
+						"alt": "",
+						"caption": ""
+					},
+					{
+						"id": 2,
+						"urlImg2560": "/img/service/baranda2-2560w.webp",
+						"urlImg1920": "/img/service/baranda2-1920w.webp",
+						"urlImg1280": "/img/service/baranda2-1280w.webp",
+						"urlImg400": "/img/service/baranda2-400w.webp",
+						"alt": "",
+						"caption": ""
+					},
+					{
+						"id": 3,
+						"urlImg2560": "/img/service/baranda3-2560w.webp",
+						"urlImg1920": "/img/service/baranda3-1920w.webp",
+						"urlImg1280": "/img/service/baranda3-1280w.webp",
+						"urlImg400": "/img/service/baranda3-400w.webp",
+						"alt": "",
+						"caption": ""
+					}
 				],
 				"especifications": {
 					"subTitle": "Especificaciones",
@@ -112,12 +187,37 @@
 				}
 			},
 			{
+				"id": "serviceFence",
 				"title": "Pintado de rejas",
 				"description": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor. Ofrecemos servicios de pintura para rejas para que se vean impecables y puedan resistir el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
-				"images": [
-					"/img/service/casa-reja1-1920w.webp",
-					"/img/service/casa-reja1-1920w.webp",
-					"/img/service/casa-reja1-1920w.webp"
+				"img": [
+					{
+						"id": 1,
+						"urlImg2560": "/img/service/reja1-2560w.webp",
+						"urlImg1920": "/img/service/reja1-1920w.webp",
+						"urlImg1280": "/img/service/reja1-1280w.webp",
+						"urlImg400": "/img/service/reja1-400w.webp",
+						"alt": "",
+						"caption": ""
+					},
+					{
+						"id": 2,
+						"urlImg2560": "/img/service/reja2-2560w.webp",
+						"urlImg1920": "/img/service/reja2-1920w.webp",
+						"urlImg1280": "/img/service/reja2-1280w.webp",
+						"urlImg400": "/img/service/reja2-400w.webp",
+						"alt": "",
+						"caption": ""
+					},
+					{
+						"id": 3,
+						"urlImg2560": "/img/service/reja3-2560w.webp",
+						"urlImg1920": "/img/service/reja3-1920w.webp",
+						"urlImg1280": "/img/service/reja3-1280w.webp",
+						"urlImg400": "/img/service/reja3-400w.webp",
+						"alt": "",
+						"caption": ""
+					}
 				],
 				"especifications": {
 					"subTitle": "Especificaciones",

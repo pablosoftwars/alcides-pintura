@@ -174,9 +174,9 @@ onMounted(() => {
 	--at-apply: bg-red-500;
 }
 .title-presentation {
-	--at-apply: relative;
+	--at-apply: relative w-full;
 	--at-apply: text-6xl text-red-500 text-center;
-	--at-apply: w-70% py-8 px-2 font-bold mt-10;
+	--at-apply: py-8 px-2 font-bold mt-10;
 }
 .paragraph-presentation {
 	--at-apply: text-lg text-slate-900;

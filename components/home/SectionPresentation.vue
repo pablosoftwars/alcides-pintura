@@ -1,7 +1,5 @@
 <template>
-	<section
-		class="container-section-first"
-	>
+	<section class="container-section-first" >
 		<nuxt-img
 			:src="dataSection.img.urlXl"
 			:srcset="`${dataSection.img.urlXl} 1920w, ${dataSection.img.urlSm} 640w`"
@@ -39,6 +37,7 @@
 		</div>
 	</section>
 </template>
+
 <script setup>
 import { gsap } from 'gsap'
 

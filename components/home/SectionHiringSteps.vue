@@ -20,12 +20,16 @@
 					<!-- background overlay -->
 					<!-- <div class="background-overlay-card"></div> -->
 
-					<p class="m-0 text-8xl text-bold">0{{i + 1}}</p>
+					<p class="text-8xl text-bold text-white bg-red-500 m-auto">0{{i + 1}}</p>
 					<p class="text-lg">{{ paragraph }}</p>
 
 				</div>
 			</div>
 
+		</div>
+
+		<div>
+			<nuxt-icon name="quote-left-solid"></nuxt-icon>
 		</div>
 	</section>
 </template>
@@ -80,7 +84,7 @@ onMounted(() => {
 
 .container-wrap {
 	--at-apply: mx-auto container text-center;
-	--at-apply: flex flex-col gap-10;
+	--at-apply: flex flex-col gap-10 px-2;
 }
 
 .title-hiring-steps {
@@ -91,7 +95,7 @@ onMounted(() => {
 	--at-apply: flex flex-col sm:flex-row flex-wrap w-full gap-8;
 }
 .container-card {
-	--at-apply: flex flex-col sm:flex-row;
+	--at-apply: flex flex-col sm:flex-row gap-8;
 }
 
 .card {
