@@ -20,9 +20,13 @@ import SectionPresentation from '~/components/about/SectionPresentation.vue'
 import SectionMission from '~/components/about/SectionMission.vue'
 import dataAbout from '~/pages/about/data_about.json'
 
+// const { data: dataAbout } = await useFetch('/api/about/about')
+
+// let dataPresentation = dataAbout.value.sectionPresentation
+// let dataPrincipies = dataAbout.value.sectionPrincipies
+
 let dataPresentation = dataAbout.sectionPresentation
 let dataPrincipies = dataAbout.sectionPrincipies
-
 let dataPage = {
 	presentation: {
 		data:dataAbout.sectionPresentation,
@@ -48,12 +52,12 @@ let animateIntersected = (entries, htmlElements) => {
 }
 
 onMounted(() => {
-	let sectionElements = containerAbout.value.querySelectorAll('.section-animation')
-	let options = { rootMargin: '0px', threshold: 0.2 }
+		let sectionElements = containerAbout.value.querySelectorAll('.section-animation')
+		let options = { rootMargin: '0px', threshold: 0.2 }
 
-	observer = new IntersectionObserver(entry => animateIntersected(entry, sectionElements), options)
+		observer = new IntersectionObserver(entry => animateIntersected(entry, sectionElements), options)
 
-	sectionElements.forEach(element=> { observer.observe(element) })
+		sectionElements.forEach(element=> { observer.observe(element) })
 
 })
 

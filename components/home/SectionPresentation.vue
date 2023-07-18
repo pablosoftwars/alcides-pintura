@@ -1,13 +1,19 @@
 <template>
 	<section class="container-section-first" >
-		<nuxt-img
+		<!-- <nuxt-picture -->
+		<!-- 	:src="dataSection.img.urlXl" -->
+		<!-- 	class="absolute w-full" -->
+		<!-- 	loading="lazy" -->
+		<!-- 	fit="cover" -->
+		<!-- 	sizes="sm:400px md:1280px lg:1920 xl:2560px" -->
+		<!-- 	:imgAttrs="{ class:'w-full h-screen object-cover' }" -->
+		<!-- /> -->
+		<img
 			:src="dataSection.img.urlXl"
-			:srcset="`${dataSection.img.urlXl} 1920w, ${dataSection.img.urlSm} 640w`"
-			:alt="`${dataSection.img.attrAlt}`"
-			class="background-section-about"
-			loading="lazy"
-		/>
-
+			:srcset="`${dataSection.img.urlXl} 1920w,
+								${dataSection.img.urlSm} 640w`"
+			class="absolute w-full object-cover min-h-full"
+		>
 		<div class="card-advertisement">
 			<!-- title secondary -->
 			<Transition name="slide-top" mode="out-in">
@@ -135,13 +141,6 @@ watchEffect(() => {
 	--at-apply: relative w-full;
 	--at-apply: flex flex-col justify-center items-center;
 	min-height: calc(100vh - 60px);
-}
-
-.background-section-about {
-	--at-apply: absolute;
-	--at-apply: w-full h-screen;
-	object-fit: cover;
-	object-position: bottom;
 }
 
 .card-advertisement {

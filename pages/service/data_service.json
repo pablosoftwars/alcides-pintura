@@ -8,12 +8,13 @@
 		"img": {
 			"urlSm": "/img/about/pintor-rodillo-640w.webp",
 			"urlXl": "/img/about/pintor-rodillo-1131w.webp",
-			"attrAlt": "image de pintor, rodillo rojo"
+			"attrAlt": "imagen de pintor, rodillo rojo"
 		}
 	},
 	"sectionServices": [
 			{
 				"id": "serviceExterior",
+				"icon":"paint-roller-solid",
 				"title": "Pintado exterior de una casa",
 				"description": "¿Busca darle una nueva vida a la fachada de su hogar? Contamos con un equipo de expertos en pintura de exteriores que pueden transformar su hogar en un abrir y cerrar de ojos. Desde la preparación de la superficie hasta la elección de los mejores productos de pintura, nos aseguramos de que cada detalle sea cuidado para ofrecerle una pintura de alta calidad que resista el paso del tiempo.",
 				"img": [
@@ -23,8 +24,8 @@
 						"urlImg1920": "/img/service/fachada1-1920w.webp",
 						"urlImg1280": "/img/service/fachada1-1280w.webp",
 						"urlImg400": "/img/service/fachada1-400w.webp",
-						"alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con colores solidos gris y blanco",
-						"caption": "Fachada colores gris y blanco"
+						"alt": "Fachada de una casa estilo chalet dos pisos, pintado de exterior con color solido gris y blanco",
+						"caption": "Fachada color gris y blanco"
 					},
 					{
 						"id": 2,
@@ -33,7 +34,7 @@
 						"urlImg1280": "/img/service/fachada2-1280w.webp",
 						"urlImg400": "/img/service/fachada2-400w.webp",
 						"alt": "Fachada de una casa estilo chalet dos pisos,pintado de exterior con colores solidos gris priedra y blanco, patio con pasto verde",
-						"caption": "Fachada colores gris piedra y blanco"
+						"caption": "Fachada color gris piedra y blanco"
 					},
 					{
 						"id": 3,
@@ -72,6 +73,7 @@
 			},
 			{
 				"id": "serviceInterior",
+				"icon":"brush-solid",
 				"title": "Pintado interior de una casa",
 				"description": "¿Necesita darle una nueva apariencia a su hogar por dentro? Contamos con un equipo de expertos en pintura de interiores que pueden ayudarle a transformar cualquier habitación en su hogar. Desde el cambio de color hasta la reparación de las imperfecciones en las paredes, nos aseguramos de que cada detalle sea atendido para brindarle una experiencia de pintura sin problemas.",
 				"img": [
@@ -82,7 +84,7 @@
 						"urlImg1280": "/img/service/interior1-1280w.webp",
 						"urlImg400": "/img/service/interior1-400w.webp",
 						"alt": "interior de una habitación, paredes color solido blancas, piso de azulejos cuadrados color crema",
-						"caption": "Habitación color blanco"
+						"caption": "Interior de habitación color blanco"
 					},
 					{
 						"id": 2,
@@ -100,7 +102,7 @@
 						"urlImg1280": "/img/service/interior3-1280w.webp",
 						"urlImg400": "/img/service/interior3-400w.webp",
 						"alt": "interior de una habitación, pared de color azul cielo, piso de azulejos rectangulares color blanco",
-						"caption": "Habitación color azul cielo"
+						"caption": "Interior de habitación color azul cielo"
 					}
 				],
 				"especifications": {
@@ -130,6 +132,7 @@
 			},
 			{
 				"id": "serviceRailing",
+				"icon":"stairs-solid",
 				"title": "Pintado de barandas",
 				"description": "Las barandas son una parte importante de su hogar que no deben ser descuidadas. Ofrecemos servicios de pintura para barandas para que luzcan como nuevas y resistan el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
 				"img": [
@@ -139,8 +142,8 @@
 						"urlImg1920": "/img/service/baranda1-1920w.webp",
 						"urlImg1280": "/img/service/baranda1-1280w.webp",
 						"urlImg400": "/img/service/baranda1-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Baranda metálica de una escalera curva en el interior de una casa",
+						"caption": "Baranda metálica color negro sin brillo"
 					},
 					{
 						"id": 2,
@@ -148,8 +151,8 @@
 						"urlImg1920": "/img/service/baranda2-1920w.webp",
 						"urlImg1280": "/img/service/baranda2-1280w.webp",
 						"urlImg400": "/img/service/baranda2-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Baranda metálica color azul en la planta alta que da a un balcon",
+						"caption": "Baranda metálica color azul"
 					},
 					{
 						"id": 3,
@@ -157,8 +160,8 @@
 						"urlImg1920": "/img/service/baranda3-1920w.webp",
 						"urlImg1280": "/img/service/baranda3-1280w.webp",
 						"urlImg400": "/img/service/baranda3-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Baranda metálica color blanco con figuras en el centro en forma de letra s ubicada en el balcon planta alta",
+						"caption": "Baranda metálica color blanco con figuras"
 					}
 				],
 				"especifications": {
@@ -188,6 +191,7 @@
 			},
 			{
 				"id": "serviceFence",
+				"icon":"reja-solid",
 				"title": "Pintado de rejas",
 				"description": "Las rejas pueden agregar un toque de seguridad y estilo a su hogar, pero si están en mal estado pueden ser un verdadero ojo de dolor. Ofrecemos servicios de pintura para rejas para que se vean impecables y puedan resistir el paso del tiempo. Utilizamos los mejores productos de pintura para garantizar una larga durabilidad y protección contra los elementos.",
 				"img": [
@@ -197,8 +201,8 @@
 						"urlImg1920": "/img/service/reja1-1920w.webp",
 						"urlImg1280": "/img/service/reja1-1280w.webp",
 						"urlImg400": "/img/service/reja1-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Reja color negro sin brillo, entrada principal de la casa",
+						"caption": "Reja color negro sin brillo con figuras color plateado"
 					},
 					{
 						"id": 2,
@@ -206,8 +210,8 @@
 						"urlImg1920": "/img/service/reja2-1920w.webp",
 						"urlImg1280": "/img/service/reja2-1280w.webp",
 						"urlImg400": "/img/service/reja2-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Portón metálico color negro sin brillo entrada principal de la casa",
+						"caption": "Portón con color negro sin brillo"
 					},
 					{
 						"id": 3,
@@ -215,8 +219,8 @@
 						"urlImg1920": "/img/service/reja3-1920w.webp",
 						"urlImg1280": "/img/service/reja3-1280w.webp",
 						"urlImg400": "/img/service/reja3-400w.webp",
-						"alt": "",
-						"caption": ""
+						"alt": "Portón metálico color plomo, rojo y blanco entrada principila de la casa",
+						"caption": "Portón metálico color plomo, rojo y blanco"
 					}
 				],
 				"especifications": {

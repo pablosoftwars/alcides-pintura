@@ -105,6 +105,7 @@ onMounted(() => {
 
 .title-why-choice {
 	--at-apply: text-slate-900;
+	--at-apply: opacity-0;
 }
 
 .container-cards {
@@ -117,6 +118,7 @@ onMounted(() => {
 
 .card-icon {
 	--at-apply: p-2 text-xl text-red-500;
+	--at-apply: opacity-0;
 }
 
 .card-text {
@@ -126,6 +128,7 @@ onMounted(() => {
 
 .card-text-title {
 	--at-apply: m-0 py-2 text-red-500;
+	--at-apply: opacity-0;
 }
 
 .card-text-paragraph {

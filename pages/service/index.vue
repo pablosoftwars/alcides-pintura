@@ -10,16 +10,19 @@
 </template>
 
 <script setup>
-import dataServices from '~/pages/service/data_service.json'
-
 import SectionPresentation from '~/components/services/SectionPresentation.vue'
 import SectionServices from '~/components/services/SectionService.vue'
 
+import dataServices from '~/pages/service/data_service.json'
+// const { data: dataServices } = await useFetch('/api/service/service')
+
+// let dataPresentation = dataServices.value.sectionPresentation
+// let dataService = dataServices.value.sectionServices
 let dataPresentation = dataServices.sectionPresentation
 let dataService = dataServices.sectionServices
 
-onMounted(() => {
-})
+// onMounted(() => {
+// })
 </script>
 
 <style scoped>

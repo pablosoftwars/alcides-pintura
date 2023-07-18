@@ -134,6 +134,7 @@ onMounted(() => {
 .card {
 	--at-apply: bg-slate-900;
 	--at-apply: flex flex-col px-2 sm:px-8 py-2 sm:py-8;
+	--at-apply: opacity-0;
 }
 
 .card-mission {

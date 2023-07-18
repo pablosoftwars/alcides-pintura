@@ -27,10 +27,6 @@
 			</div>
 
 		</div>
-
-		<div>
-			<nuxt-icon name="quote-left-solid"></nuxt-icon>
-		</div>
 	</section>
 </template>
 
@@ -89,6 +85,7 @@ onMounted(() => {
 
 .title-hiring-steps {
 	--at-apply: text-slate-900;
+	--at-apply: opacity-0;
 }
 
 .container-cards {
@@ -100,6 +97,7 @@ onMounted(() => {
 
 .card {
 	--at-apply: relative bg-slate-100 p-2 flex-1;
+	--at-apply: opacity-0;
 }
 
 .background-card {

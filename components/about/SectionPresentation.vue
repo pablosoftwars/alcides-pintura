@@ -10,16 +10,33 @@
 					<h2 class="title-company">
 						Alcides & Asociados
 						<div class="title-company-overlay"></div>
-						<nuxt-img class="bg-title-company bg-title -z-1" src="/img/about/rastro-pintura-rodillo-rojo.png"></nuxt-img>
+						<!-- <nuxt-img class="bg-title-company bg-title -z-1" src="/about/rastro-pintura-rodillo-rojo.png" /> -->
+						<img
+							src="/img/about/rastro-pintura-rodillo-rojo.png"
+							alt="pintor con rodillo pintura roja"
+							class="bg-title-company bg-title -z-1"
+						>
 					</h2>
 				</div>
 
-				<nuxt-img
+				<!-- <nuxt-img -->
+				<!-- 	:src="dataSection.img.urlXl" -->
+				<!-- 	alt="dataSection.img.attrAlt" -->
+				<!-- 	class="card-img" -->
+				<!-- /> -->
+
+				<img
 					:src="dataSection.img.urlXl"
-					:srcset="`${dataSection.img.urlXl} 1920w, ${dataSection.img.urlSm} 640w`"
-					:alt="dataSection.img.attrAlt"
+					alt="dataSection.img.attrAlt"
 					class="card-img"
-				/>
+				>
+
+				<!-- <nuxt-img -->
+				<!-- 	:src="dataSection.img.urlXl" -->
+				<!-- 	:srcset="`${dataSection.img.urlXl} 1920w, ${dataSection.img.urlSm} 640w`" -->
+				<!-- 	:alt="dataSection.img.attrAlt" -->
+				<!-- 	class="card-img" -->
+				<!-- /> -->
 			</div>
 
 			<!-- bottom and left -->
@@ -51,8 +68,8 @@ let props = defineProps({
 				subTitle: 'subTitle',
 				content: ['content'],
 				img: {
-					urlSm: '/img/about/pintor-rodillo-640w.webp',
-					urlXl: '/img/about/pintor-rodillo-1131w.webp',
+					urlSm: '/about/pintor-rodillo-640w.webp',
+					urlXl: '/about/pintor-rodillo-1131w.webp',
 					attrAlt: 'image pintor rodillo rojo'
 				}
 		},

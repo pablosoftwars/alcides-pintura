@@ -58,7 +58,7 @@ onMounted(() => {
             break;
         }
 
-        document.getElementById("resultado").innerHTML = `El costo total es: $${precio}`;
+        document.getElementById("resultado").innerHTML = `El costo total es: Bs. ${precio}`;
       }
 })
 </script>

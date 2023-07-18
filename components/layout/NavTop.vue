@@ -34,7 +34,8 @@ let listRoutes:Routes[]= [
 	{ name : 'Inicio', path: '/', bg: 'bg-red-500' },
 	{ name: 'Nosotros', path: '/about', bg: 'bg-red-500' },
 	{ name: 'Servicios', path: '/service', bg: 'bg-red-500' },
-	{ name: 'Precios', path: '/price', bg: 'bg-red-500' }
+	{ name: 'Precios', path: '/price', bg: 'bg-red-500' },
+	{ name: 'Contacto', path: '/contact', bg: 'bg-red-500' }
 ]
 
 let elementDrop: HTMLCollection | null

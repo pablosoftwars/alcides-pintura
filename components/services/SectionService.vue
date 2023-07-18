@@ -2,7 +2,11 @@
 	<section :id="dataSection.id" class="container-section-service">
 		<div class="card-service">
 			
-			<h2 class="text-slate-900">{{ dataSection.title }}</h2>
+			<div class="flex justify-center items-center" >
+				<nuxt-icon :name="dataSection.icon" class="text-red-500 mr-2 text-2xl" />
+				<h2 class="text-slate-900">{{ dataSection.title }}</h2>
+			</div>
+
 			<p class="text-lg">{{ dataSection.description }}</p>
 
 			<div class="flex flex-col gap-4">
@@ -15,7 +19,10 @@
 
 					<div class="text-left flex flex-col md:flex-row">
 						<div class="p-2 bg-gray-100">
-							<h3 class="text-slate-900">{{ dataSection.especifications.subTitle }}</h3>
+							<div class="flex justify-center items-center">
+								<nuxt-icon name="list-check-solid" class="mr-2" />
+								<h3 class="text-slate-900">{{ dataSection.especifications.subTitle }}</h3>
+							</div>
 
 							<ul
 								v-for="(especification, i) in dataSection.especifications.paragraphs"
@@ -27,7 +34,10 @@
 						</div>
 
 						<div class="p-2 bg-gray-100">
-							<h3 class="text-slate-900">{{ dataSection.procedures.subTitle }}</h3>
+							<div class="flex justify-center items-center">
+								<nuxt-icon name="screwdriver-wrench-solid" class="mr-2" />
+								<h3 class="text-slate-900">{{ dataSection.procedures.subTitle }}</h3>
+							</div>
 							<ul
 								v-for="(procedure, i) in dataSection.procedures.paragraphs"
 								:key="i"
@@ -38,7 +48,10 @@
 						</div>
 
 						<div class="p-2 bg-gray-100">
-							<h3 class="text-slate-900">{{ dataSection.cares.subTitle }}</h3>
+							<div class="flex justify-center items-center">
+								<nuxt-icon name="triangle-exclamation-solid" class="mr-2 text-red-500" />
+								<h3 class="text-slate-900">{{ dataSection.cares.subTitle }}</h3>
+							</div>
 							<ul
 								v-for="(care, i) in dataSection.cares.paragraphs"
 								:key="i"
@@ -70,6 +83,7 @@ let props = defineProps({
 		type: Object,
 		default: {
 			href: '',
+			icon: 'bars-solid',
 			title: 'title',
 			description: 'description',
 			img: [

@@ -4,11 +4,14 @@
 		<!-- <Preload v-if="isPreload" /> -->
 
 		<div class="layout-body">
-			<NuxtPage :transition="{ name: 'fade', mode: 'out-in' }" />
+			<NuxtPage
+				:transition="{ name: 'page', mode: 'out-in' }"
+				:key="$route.fullPath"
+			/>
 		</div>
-		<!-- <div class="contact-container"> -->
-		<!-- 	<ContactFloat /> -->
-		<!-- </div> -->
+		<div class="contact-container">
+			<ContactFloat />
+		</div>
 	</div>
 </template>
 
@@ -18,7 +21,11 @@ useHead({ title: 'pagina pinturas' })
 import NavTop from '~/components/layout/NavTop.vue'
 import ContactFloat from '~/components/layout/ContactFloat.vue'
 
-let isPreload = ref(true)
+// let isPreload = ref(true)
+
+// onMounted(() => {
+// 	isPreload.value = false
+// })
 </script>
 
 <style scoped>

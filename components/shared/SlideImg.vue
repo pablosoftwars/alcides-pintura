@@ -4,10 +4,10 @@
 			<!-- <div> {{ caption }} </div> -->
 			<div
 				v-for="(item, i) in dataImg" :key="i" 
-				class="mySlides relative"
+				class="mySlides relative fade"
 			>
 				<div class="bg-slate-900 text-white p-2">{{ item.caption }}</div>
-				<nuxt-img
+				<img
 					:src="item.urlImg1920"
 					:srcset="`${item.urlImg2560} 2560w,
 										${item.urlImg1920} 1920w,
@@ -15,7 +15,25 @@
 										${item.urlImg400} 400w`"
 					:alt="item.alt"
 					class="img"
-				/>
+				>
+				<!-- <nuxt-img -->
+				<!-- 	:src="item.urlImg1920" -->
+				<!-- 	:srcset="`${item.urlImg2560} 2560w, -->
+				<!-- 						${item.urlImg1920} 1920w, -->
+				<!-- 						${item.urlImg1280} 1280w, -->
+				<!-- 						${item.urlImg400} 400w`" -->
+				<!-- 	:alt="item.alt" -->
+				<!-- 	class="img" -->
+				<!-- /> -->
+				<!-- <nuxt-picture -->
+				<!-- 	:src="item.urlImg1920" -->
+				<!-- 	:imgAttrs="{ class: 'w-full object-cover aspect-video'}" -->
+				<!-- 	sizes="xs:100vw sm:90vw md:90vw lg:80vw xl:80vw" -->
+				<!-- 	format="webp,jpeg" -->
+				<!-- 	densities="1x 2x" -->
+				<!-- 	loading="lazy" -->
+				<!-- 	fit="cover" -->
+				<!-- /> -->
 
 			</div>
 
@@ -115,6 +133,8 @@ onMounted(() => {
 	--at-apply: flex flex-col items-center justify-center;
 	/* --at-apply: border border-solid border-blue-500; */
 	--at-apply: mx-auto;
+	display: none;
+	transition: .3 ease-in-out;
 	/* aspect-ratio: 16/9; */
 	/* width: 100%; */
 	/* object-fit: cover; */
@@ -149,6 +169,7 @@ onMounted(() => {
 	--at-apply: absolute;
 	--at-apply: bg-red-500 text-white;
 	--at-apply: p-2 sm:p-4 text-xl sm:text-2xl 2xl:text-4xl;
+  transition: 0.3s ease;
 }
 
 .prev, .next {
@@ -158,5 +179,21 @@ onMounted(() => {
 
 .sombra { --at-apply: absolute bg-black/50 w-full h-full z-2; }
 
-.dot { --at-apply: hover:cursor-pointer; }
+.dot { 
+	--at-apply: hover:cursor-pointer;
+	transition: background-color 0.3s ease;
+}
+.active {
+	--at-apply: bg-red-500;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 </style>

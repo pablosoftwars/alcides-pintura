@@ -19,7 +19,7 @@ let listSocialNetwork = [
 	{
 		name: 'whatsapp',
 		icon: 'square-whatsapp',
-		url: 'https://wa.me/75544663?text=Buenas, una consulta:',
+		url: 'https://wa.me/65020466?text=Alcides & Asociados, Haga su pregunta que le responderemos al instante',
 		ariaLabel: 'Contactame por whatsapp',
 		color: 'text-green-500'
 	},
@@ -33,9 +33,16 @@ let listSocialNetwork = [
 	{
 		name: 'gmail',
 		icon: 'gmail',
-		url: 'mailto:pablquir@gmail.com?subject="Contizacion de pintado"',
+		url: 'mailto:pablquir@gmail.com?subject="Cotizacion de pintado"',
 		ariaLabel: 'Contactame por gmail',
 		color: 'text-red-500'
+	},
+	{
+		name: 'gmail',
+		icon: 'phone-solid',
+		url: 'tel:+59165020466',
+		ariaLabel: 'Celular 75544663',
+		color: 'text-black'
 	},
 ]
 </script>

@@ -40,6 +40,7 @@ onBeforeMount(() => {
 	--at-apply: absolute h-screen w-full;
 	--at-apply: top-0 left-0;
 	--at-apply: overflow-hidden;
+	--at-apply: z-5;
 }
 .img {
 	--at-apply: absolute w-100px h-100px -bottom-180px;

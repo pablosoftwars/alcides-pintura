@@ -1,6 +1,5 @@
 <template>
 	<div ref="containerHome" class="container-home">
-
 		<SectionPresentation
 			id="id-presentation"
 			:dataSection="dataPage.presentation.data"
@@ -55,6 +54,15 @@ import CurtainLines from '~/components/shared/CurtainLines.vue'
 
 import dataHome from '~/pages/home/data_home.json'
 
+// let { data: dataHome } = await useFetch('/api/home/home')
+
+// let dataPage = {
+// 	presentation: { data: dataHome.value.sectionPresentation, animation: shallowReactive({ play: false }) },
+// 	services: { data: dataHome.value.sectionService, animation: shallowReactive({ play: false }) },
+// 	hiringSteps: { data: dataHome.value.sectionHiringSteps, animation: shallowReactive({ play: false }) },
+// 	whyChoice: { data: dataHome.value.sectionWhyChoice, animation: shallowReactive({ play: false }) },
+// 	comments: { data: dataHome.value.sectionComments, animation: shallowReactive({ play: false }) }
+// }
 let dataPage = {
 	presentation: { data: dataHome.sectionPresentation, animation: shallowReactive({ play: false }) },
 	services: { data: dataHome.sectionService, animation: shallowReactive({ play: false }) },
@@ -79,6 +87,7 @@ let sequenceAnimation = (entries, data) => {
 }
 
 
+
 onMounted(() => {
 	let sectionService = containerHome.value.querySelectorAll('.section-animation')
 
@@ -94,7 +103,7 @@ onMounted(() => {
 
 })
 
-// onUnmounted(() => { observer.disconnect() })
+onUnmounted(() => { observer.disconnect() })
 </script>
 
 <style scoped>

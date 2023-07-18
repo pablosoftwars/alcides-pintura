@@ -84,7 +84,10 @@ onMounted(() => {
 	--at-apply: py-20 sm:py-30;
 }
 .container-wrap{ --at-apply: mx-auto container text-center flex flex-col gap-10; }
-.title-comments { --at-apply: text-slate-900; }
+.title-comments {
+	--at-apply: text-slate-900;
+	--at-apply: opacity-0;
+}
 .container-cards { 
 	--at-apply: flex w-full gap-4 p-4;
 	overflow-x: auto;
@@ -93,5 +96,6 @@ onMounted(() => {
 .card {
 	--at-apply: min-w-300px;
 	--at-apply: text-lg text-left;
+	--at-apply: opacity-0;
 }
 </style>

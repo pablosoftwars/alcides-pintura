@@ -18,9 +18,15 @@
 						<p class="text-slate-900 text-lg">{{ content.paragraph }}</p>
 						<div class="h-full flex items-end justify-center">
 							<!-- <button class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold">ver mas</button> -->
-							<a class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold" :href="content.href">
+							<!-- <a class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold" :href="content.href"> -->
+							<!-- 	Ver mas -->
+							<!-- </a> -->
+							<NuxtLink
+								class="bg-red-500 text-white px-4 py-2 border-0 text-lg text-bold"
+								:to="{ path: '/service', hash: content.href }"
+							>
 								Ver mas
-							</a>
+							</NuxtLink>
 						</div>
 					</div>
 				</div>
@@ -91,6 +97,9 @@ onMounted(() => {
 
 </script>
 <style scoped>
+.title-services {
+	--at-apply: opacity-0;
+}
 .container-section-services {
 	--at-apply: py-20 sm:py-30 overflow-hidden;
 }
@@ -102,5 +111,6 @@ onMounted(() => {
 }
 .card {
 	--at-apply: flex-1 flex flex-col p-4;
+	--at-apply: opacity-0;
 }
 </style>
